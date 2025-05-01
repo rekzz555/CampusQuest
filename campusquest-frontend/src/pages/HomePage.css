@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Rubik:wght@600;700&display=swap');
+
+.home-container {
+  background: linear-gradient(135deg, #002b5c, #001a40);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px;
+  color: #ffffff;
+}
+
+.home-logo {
+  width: 600px;
+  max-width: 100%;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.home-title {
+  font-family: 'Rubik', sans-serif;
+  color: #fdbf00;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  color: #ffde59;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.home-button {
+  background-color: #fdbf00;
+  color: #002b5c;
+  padding: 14px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #ffcd3c;
+  transform: scale(1.05);
+}
+
+.founder-section {
+  max-width: 800px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 16px;
+  border: 2px solid #fdbf00;
+  box-shadow: 0 0 12px rgba(253, 191, 0, 0.4);
+}
+
+.founder-section h2 {
+  font-size: 24px;
+  color: #fdbf00;
+  margin-bottom: 16px;
+}
+
+.founder-section p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .home-logo {
+    width: 90%;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .home-title {
+    font-size: 32px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+  }
+}

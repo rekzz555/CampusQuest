@@ -1,0 +1,151 @@
+/* 📁 src/pages/DashboardPage.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #002b5c, #001a40);
+  color: #ffffff;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  padding: 30px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Left & Right Panels */
+.resource-card {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid #fdbf00;
+  border-radius: 16px;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 0 15px rgba(253, 191, 0, 0.3);
+  overflow-y: auto;
+}
+
+.resource-card h3 {
+  color: #fdbf00;
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resource-card hr {
+  border: none;
+  height: 1px;
+  background: #fdbf00;
+  margin-bottom: 20px;
+}
+
+.resource-item {
+  margin-bottom: 22px;
+}
+
+.resource-item strong {
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.resource-item p {
+  font-size: 14px;
+  color: #cfd8dc;
+  margin: 4px 0 6px;
+}
+
+.resource-item a {
+  color: #a4d4ff;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.resource-item a:hover {
+  color: #fdbf00;
+}
+
+/* Center Dashboard Card */
+.main-dashboard-card {
+  flex: 1.5;
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid #fdbf00;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(253, 191, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-dashboard-card h2 {
+  color: #fdbf00;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.main-dashboard-card p {
+  color: #e0f7fa;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-buttons button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fdbf00;
+  color: #002b5c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-buttons button:hover {
+  background-color: #ffcc33;
+  transform: scale(1.03);
+}
+
+.logout-btn {
+  background-color: #e63946 !important;
+  color: #ffffff !important;
+}
+
+.logout-btn:hover {
+  background-color: #d62828 !important;
+}
+
+/* Responsive Mobile View */
+@media (max-width: 1100px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .main-dashboard-card, .resource-card {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}

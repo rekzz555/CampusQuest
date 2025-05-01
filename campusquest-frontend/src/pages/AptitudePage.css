@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.apt-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #002b5c, #001a40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.apt-box {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  border: 2px solid #fdbf00;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(253, 191, 0, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.apt-box h2,
+.apt-box h3 {
+  color: #fdbf00;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.apt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.apt-timer {
+  color: #fdbf00;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.apt-question {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.apt-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.apt-option {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #fdbf00;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+.apt-option:hover {
+  background-color: #fdbf00;
+  color: #002b5c;
+  font-weight: bold;
+  transform: scale(1.02);
+}
+
+.apt-option.selected {
+  background-color: #fdbf00;
+  color: #002b5c;
+  font-weight: bold;
+}
+
+.apt-next,
+.apt-start {
+  background-color: #fdbf00;
+  color: #002b5c;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(253, 191, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.apt-next:disabled {
+  background-color: #888;
+  color: #e0e0e0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.apt-next:hover:not(:disabled),
+.apt-start:hover {
+  background-color: #ffcd3c;
+  transform: scale(1.04);
+}
+
+.apt-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.apt-box ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #e0e0e0;
+}
+
+/* ✅ NEW BUTTON STYLE */
+.apt-dash-btn {
+  margin-top: 20px;
+  background-color: #fdbf00;
+  color: #002b5c;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(253, 191, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.apt-dash-btn:hover {
+  background-color: #ffcd3c;
+  transform: scale(1.04);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
